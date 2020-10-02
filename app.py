@@ -5,34 +5,26 @@ import random
 def get_file_lines(filename):
     filename = open('poem.txt', 'r')
     line_list = filename.readlines()
-    #print(line_list)
+    
     return line_list
 
-    #lines_list = []
-    # for line in filename:
-    #     newline = line.strip()
-    #     split_list_of_lines = newline.split()
-    #     split_list_of_lines
-    #     print(split_list_of_lines)
-    #     #return split_list_of_lines
-       
+   
         
 line_list = get_file_lines('poem.txt')
 
 
-# def lines_printed_backwards(line_list):
+def lines_printed_backwards(line_list):
     
-#     #print(reveresed_lines)
-#     list_num = list(range(len(line_list)))
+    
+    list_num = list(range(len(line_list)))
 
-#     for i in list(reversed(list_num)):
-#         print(f'{i + 1} {line_list[i]}')
+    for i in list(reversed(list_num)):
+        print(f'{i + 1} {line_list[i]}')
 
-# lines_printed_backwards(line_list)
+lines_printed_backwards(line_list)
 
 def lines_printed_random(line_list):
-    #print(line_list)
-    #random_line = range(len(line_list))
+   
     i = 0
     while i < len(line_list):
         random_line = random.randrange(100)
